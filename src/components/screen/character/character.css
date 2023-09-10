@@ -1,0 +1,43 @@
+div.character-selection {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.character-selection .character-name {
+    text-align: center;
+}
+
+div.character-selection .character-name h2 {
+    font-size: 4rem;
+    color: white;
+}
+
+div.character-selection .character-name h3 {
+    font-size: 3rem;
+    color: white;
+}
+
+div.character-selection .character-image {
+    display: flex;
+    gap: 2rem;
+}
+
+div.character-selection .character-image img {
+    width: 600px;
+}
+
+.character-image .button {
+    text-align: center;
+    align-self: center;
+    width: 3rem;
+    user-select: none;
+}
+
+div.character-selection .character-details {
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+}

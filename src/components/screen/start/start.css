@@ -1,0 +1,23 @@
+#start-screen>div, #start-screen>nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#start-screen .start-text {
+    height: 60vh;
+}
+
+#start-screen nav {
+    height: 40vh;
+}
+
+#start-screen nav > div {
+    align-self: center;
+}
+
+#start-screen nav>div .button {
+    font-size: 5rem;
+    padding: 1rem 2rem;
+}
