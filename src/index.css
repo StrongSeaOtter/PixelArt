@@ -7,7 +7,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  background-image: url("./assets/img/desert.jpg");
+  background-image: url("assets/img/desert.jpg");
   background-size: cover;
   background-attachment: fixed;
   height: 100vh;
