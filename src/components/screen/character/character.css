@@ -24,11 +24,24 @@ div.character-selection .character-image {
     gap: 2rem;
 }
 
-div.character-selection .character-image img {
+.character-image .character-frame {
+    position: relative;
+}
+
+.character-image .character-frame .button {
+    position: absolute;
+    width: 250px;
+    bottom: 2rem;
+    text-align: center;
+    left: calc(50% - 125px);
+    border: 1px solid black;
+}
+
+div.character-selection .character-image .character-frame img {
     width: 600px;
 }
 
-.character-image .button {
+.character-image .button.choose-character {
     text-align: center;
     align-self: center;
     width: 3rem;

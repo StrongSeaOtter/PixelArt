@@ -24,6 +24,10 @@ export default function Character(props) {
         props.screenHandler('Start')
     }
 
+    const startGame = () => {
+        props.screenHandler('Game')
+    }
+
     let character = characterList[index];
     return (
         <section id='character-screen'>
@@ -36,9 +40,12 @@ export default function Character(props) {
                     <h3>{character.name}</h3>
                 </div>
                 <div className='character-image'>
-                    <div className='button pixel-corners' onClick={handlePrevClick} disabled={!hasPrev}>&larr;</div>
-                    <img src={character.url} alt={character.alt} />
-                    <div className='button pixel-corners' onClick={handleNextClick} disabled={!hasNext}>&rarr;</div>
+                    <div className='button choose-character pixel-corners' onClick={handlePrevClick} disabled={!hasPrev}>&larr;</div>
+                    <div className='character-frame'>
+                        <img src={character.url} alt={character.alt} />
+                        <div className='button pixel-corners' onClick={startGame}>Start Game</div>
+                    </div>
+                    <div className='button choose-character pixel-corners' onClick={handleNextClick} disabled={!hasNext}>&rarr;</div>
                 </div>
                 <div className='character-details'>
                     <p>{character.description}</p>
