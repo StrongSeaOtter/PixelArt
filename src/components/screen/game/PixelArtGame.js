@@ -1,12 +1,12 @@
 class PixelArtGame {
 
-    constructor() {
+    constructor(map, character, scoreDisplay, timer) {
       // DOM elements
-      this.map = document.querySelector(".map");
-      this.character = document.querySelector(".character");
-      this.scoreDisplay = document.getElementById("score");
-      this.timer = document.getElementById("timer");
-  
+      this.map = map;
+      this.character = character;
+      this.scoreDisplay = scoreDisplay;
+      this.timer = timer;
+    
       // Game variables
       this.score = 0;
       this.timeLimit = parseInt(this.timer.textContent);
@@ -125,6 +125,11 @@ class PixelArtGame {
   
     // Handle player movement
     handleMovement() {
+
+      if (this.isGameOver) {
+        return;
+      }
+
       const heldDirection = this.heldDirections[0];
       if (heldDirection) {
         const movement = {
@@ -181,6 +186,9 @@ class PixelArtGame {
   
     // Show the start screen
     showStartScreen() {
+
+      if (this.startGameScreen) return;
+
       this.startGameScreen = document.createElement("div");
       this.startGameScreen.classList.add("start-screen");
       this.startGameScreen.innerHTML = `
@@ -188,9 +196,10 @@ class PixelArtGame {
         <p>Collect as many fish coins as you can!<br><sub>Raw fish adds 2 seconds to your timer.</sub></p>
         <button id="start-button">Start Game</button>
       `;
-      document.body.appendChild(this.startGameScreen);
+      
+      this.map.closest('.camera').appendChild(this.startGameScreen);
   
-      const startButton = document.getElementById("start-button");
+      const startButton = this.startGameScreen.querySelector("#start-button");
       startButton.addEventListener("click", () => {
         this.startGame();
         this.hideStartScreen();
@@ -199,6 +208,9 @@ class PixelArtGame {
   
     // Show the game over screen
     showGameOverScreen() {
+
+      if (this.gameOverScreen) return;
+
       this.isGameOver = true;
       this.heldDirections = [];
       this.character.setAttribute("walking", "false");
@@ -210,9 +222,10 @@ class PixelArtGame {
         <p>Final Score: ${this.score}</p>
         <button id="restart-button">Restart Game</button>
       `;
-      document.body.appendChild(this.gameOverScreen);
+
+      this.map.closest('.camera').appendChild(this.gameOverScreen);
   
-      const restartButton = document.getElementById("restart-button");
+      const restartButton = this.gameOverScreen.querySelector("#restart-button");
       restartButton.addEventListener("click", () => {
         this.restartGame();
         this.hideGameOverScreen();
@@ -223,6 +236,7 @@ class PixelArtGame {
     hideStartScreen() {
       if (this.startGameScreen) {
         this.startGameScreen.remove();
+        this.startGameScreen = null;
       }
     }
   
@@ -230,6 +244,7 @@ class PixelArtGame {
     hideGameOverScreen() {
       if (this.gameOverScreen) {
         this.gameOverScreen.remove();
+        this.gameOverScreen = null;
       }
     }
   
@@ -280,8 +295,5 @@ class PixelArtGame {
       }
     }
   }
-  
-  // Create an instance of the game and show the start screen
-  //const game = new PixelArtGame();
-  //game.showStartScreen();
-  
+
+  export default PixelArtGame;
