@@ -3,8 +3,7 @@
 Welcome to Otter Adventure, a fun and exciting pixel game where you play as an adorable otter on a quest to collect fish coins within a limited time frame. Your otter character is hungry, and it's your job to help it gather as many fish coins as possible to satisfy its appetite. But be careful, time is ticking, and you'll need to catch fish to extend your game time!
 
 ## Game Link
-You can play the game <a href="https://strongseaotter.github.io/PixelArt/" target="_blank">here</a>
-
+You can play the game [here](https://strongseaotter.github.io/PixelArt/)
 
 ## Table of Contents
 - [Game Overview](#game-overview)
