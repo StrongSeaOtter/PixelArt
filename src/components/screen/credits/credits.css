@@ -16,6 +16,8 @@
 
 .developer img {
     width: 200px;
+    image-rendering: pixelated;
+    background-color: white;
 }
 
 .contact img {

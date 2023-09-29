@@ -31,14 +31,16 @@ div.character-selection .character-image {
 .character-image .character-frame .button {
     position: absolute;
     width: 250px;
-    bottom: 2rem;
+    bottom: -2rem;
     text-align: center;
-    left: calc(50% - 125px);
+    left: calc(50% - 135px);
     border: 1px solid black;
 }
 
 div.character-selection .character-image .character-frame img {
-    width: 600px;
+    width: 400px;
+    image-rendering: pixelated;
+    background-color: white;
 }
 
 .character-image .button.choose-character {

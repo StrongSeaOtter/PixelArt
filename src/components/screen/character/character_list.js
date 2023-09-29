@@ -1,26 +1,16 @@
 export const characterList = [{
-    name: 'Animal 1',
-    description: 'Animal1... Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',
-    url: 'img/animal1.jpg',
-    alt: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam'
+    name: 'Otter',
+    description: `Dive into pixelated fun with our otter character, eagerly collecting fish in an underwater world. With lightning-fast flips and twists, this otter's nimble moves snatch fish from crystal-clear waters, adding to the thrill of the game as you gather a bounty of aquatic treasures in this charming pixel adventure.`,
+    url: 'img/otter.png',
+    alt: 'otter'
 }, {
-    name: 'Animal 2',
-    description: 'Animal2... Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',
-    url: 'img/animal2.jpg',
-    alt: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam'
+    name: 'Monkey',
+    description: 'Embark on a pixelated escapade with our mischievous monkey character, on a quest to gather ripe, golden bananas. Swing through vibrant jungle vines and leap across pixel-perfect platforms, as you navigate obstacles and challenges. Join the fun in this nostalgic pixel game, collecting bananas and enjoying thrilling adventures along the way.',
+    url: 'img/monkey.png',
+    alt: 'monkey'
 }, {
-    name: 'Animal 3',
-    description: 'Animal3... Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',
-    url: 'img/animal3.jpg',
-    alt: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam'
-}, {
-    name: 'Animal 4',
-    description: "Animal4... Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam",
-    url: 'img/animal4.jpg',
-    alt: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam'
-}, {
-    name: 'Animal 5',
-    description: 'Animal5... Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',
-    url: 'img/animal5.jpg',
-    alt: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam'
+    name: 'Piggy',
+    description: 'Enter a pixelated world of culinary delights with our delightful pig character. This plucky porker is on a quest to unearth precious truffles. Navigate through intricate mazes, dig up treasures, and savor the excitement of pixelated foraging adventures. Join this epicurean pig in a savory journey through a charming pixel game.',
+    url: 'img/pig.png',
+    alt: 'pig'
 }];
