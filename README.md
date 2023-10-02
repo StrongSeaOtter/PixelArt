@@ -56,7 +56,8 @@ To play Otter Adventure, follow these simple installation steps:
 ## Credits
 
 - Game Concept and Development by [StrongOtter]
-- Pixel Art by [StrongOtter] (If applicable)
+- Pixel Art by [StrongOtter]
+- <a href="https://www.freepik.com/free-vector/pixel-art-mystical-background_29019077.htm#query=pixel%20art&position=1&from_view=search&track=ais">Background Image by pikisuperstar</a> on Freepik
 
-Enjoy your Otter Adventure, and have fun collecting those fish coins! If you encounter any issues or have feedback, please feel free to [contact us](mailto:jieyi.mai@strongotter.com). Happy gaming!
+Enjoy your Otter Adventure, and have fun collecting those fish coins! If you encounter any issues or have feedback, please feel free to [contact me](mailto:jieyi.mai@strongotter.com). Happy gaming!
 

@@ -26,7 +26,9 @@ export default function Credits(props) {
                             <h4 className='pixel-corners'>Find me at</h4>
                         </div>
                         <div className='pixel-corner-wrapper'>
-                            <img className='pixel-corners' src='img/social.jpg' />
+                            <a href='https://github.com/StrongSeaOtter' target="_blank">
+                                <img className='pixel-corners' src='img/github.png' />
+                            </a>
                         </div>
                     </div>
                 </div>

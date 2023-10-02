@@ -21,7 +21,8 @@
 }
 
 .contact img {
-    width: 300px;
+    width: 150px;
+    background-color: white;
 }
 
 .newsletter p {
